@@ -87,7 +87,7 @@ curl -X 'POST' 'http://0.0.0.0:8000/api/v1/ingest' \
 }
 ```
 
-To send a retrieve request (GET) the date is expected to be in this format: YYYY-MM-DD hh:mm:ss.
+To send a retrieve request (GET) the date is expected to be in this format: **_YYYY-MM-DD hh:mm:ss_**.
 ```
 curl -X 'GET' 'http://0.0.0.0:8000/api/v1/retrieve?date_from=2023-01-01%2000%3A00%3A00&date_to=2025-01-01%2000%3A00%3A00' \
      -H 'accept: application/json' \
