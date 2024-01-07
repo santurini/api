@@ -2,8 +2,8 @@ FROM python:3.10
 RUN mkdir -p /backend/app
 WORKDIR /backend 
 
-COPY requirements.txt /
-RUN pip install --requirement /requirements.txt
+COPY requirements.txt /backend
+RUN pip install --requirement /backend/requirements.txt
 
 COPY ./app /backend/app
 
