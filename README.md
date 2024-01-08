@@ -28,7 +28,8 @@
 #### 1. Launch the docker service
 ```
 bash bin/start.sh
-
+```
+```
 [+] Building 1.8s (11/11) FINISHED                                                                                                                                             docker:desktop-linux
  => [backend internal] load build definition from Dockerfile                                                                                                                                   0.0s
  => => transferring dockerfile: 292B                                                                                                                                                           0.0s
@@ -117,4 +118,13 @@ curl -X 'GET' 'http://0.0.0.0:8000/api/v1/retrieve?date_from=2023-01-01%2000%3A0
   "status_code": 200
 }
 ```
-
+#### 4. Stop the service
+```
+bash bin/stop.sh
+```
+```
+[+] Running 3/2
+ ✔ Container api-backend-1  Removed                                                                                                                                                                                          0.4s 
+ ✔ Container api-mongo-1    Removed                                                                                                                                                                                          0.4s 
+ ✔ Network api_default      Removed 
+```
