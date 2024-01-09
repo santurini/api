@@ -1,4 +1,43 @@
 ## Project structure
+The structure involves controllers, models, and handlers. It is a modular and organized approach to buildthe API. Let's break down these components:
+
+1. **Controller:**
+   - **Role:** Controllers handle incoming requests, process user input, interact with models, and manage the flow of data.
+   - **Responsibilities:**
+     - Receive requests from the user or external systems.
+     - Interpret and validate user input.
+     - Interact with models to retrieve or update data.
+     - Decide which response to send back to the user.
+
+2. **Model:**
+   - **Role:** Models represent the data structure of the application.
+   - **Responsibilities:**
+     - Define the structure of the data (e.g., database tables, object properties).
+     - Handle data validation and manipulation.
+     - Interact with the database or other data sources.
+
+3. **Handler:**
+   - **Role:** Handlers are components that deal with specific tasks or operations within the application.
+   - **Responsibilities:**
+     - Execute specific actions or operations in response to events or requests.
+     - Coordinate the flow of data between controllers and models.
+     - Handle specific tasks that don't fit neatly into the controller or model responsibilities.
+
+**Relationships:**
+- **Controller-Model Interaction:**
+  - Controllers use models to retrieve or update data.
+  - Models provide a structured way to handle and represent data.
+
+- **Controller-Handler Interaction:**
+  - Controllers delegate specific tasks to handlers.
+  - Handlers execute tasks and report back to controllers.
+
+- **Model-Handler Interaction:**
+  - Handlers utilize models to perform specific data-related operations.
+
+In this way, the controllers orchestrates the overall flow, delegates data-related tasks to the models, and involve the handlers for specific actions.
+This structure promotes separation of concerns, making the code more modular, maintainable, and easier to understand.
+
 ```
 ├── backend                                       # root folder of the applicative
 │   ├── app                                       # folder containing the source code of the applicative 
