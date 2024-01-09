@@ -1,7 +1,7 @@
 ## Project structure
 The structure involves controllers, models, and handlers. It is a modular and organized approach to buildthe API. Let's break down these components:
 
-1. **Controller:**
+1. **Controllers:**
    - **Role:** Controllers handle incoming requests, process user input, interact with models, and manage the flow of data.
    - **Responsibilities:**
      - Receive requests from the user or external systems.
@@ -9,14 +9,14 @@ The structure involves controllers, models, and handlers. It is a modular and or
      - Interact with models to retrieve or update data.
      - Decide which response to send back to the user.
 
-2. **Model:**
+2. **Models:**
    - **Role:** Models represent the data structure of the application.
    - **Responsibilities:**
      - Define the structure of the data (e.g., database tables, object properties).
      - Handle data validation and manipulation.
      - Interact with the database or other data sources.
 
-3. **Handler:**
+3. **Handlers:**
    - **Role:** Handlers are components that deal with specific tasks or operations within the application.
    - **Responsibilities:**
      - Execute specific actions or operations in response to events or requests.
