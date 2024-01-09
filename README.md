@@ -1,5 +1,6 @@
 ## Project structure
-The structure involves controllers, models, and handlers. It is a modular and organized approach to buildthe API. Let's break down these components:
+The structure involves controllers, models, and handlers. In this way, the controllers orchestrates the overall flow, delegates data-related tasks to the models, and involve the handlers for specific actions.
+This structure promotes separation of concerns, making the code more modular, maintainable, and easier to understand.
 
 1. **Controllers:**
    - **Role:** Controllers handle incoming requests, process user input, interact with models, and manage the flow of data.
@@ -41,9 +42,6 @@ The structure involves controllers, models, and handlers. It is a modular and or
 - **Advantages:**
    - Tasks are executed concurrently without waiting for each other to complete, asynchronous programming enables the API to handle multiple requests simultaneously.
    - Prevent delays and ensures efficient utilization of system resources, leading to better performance and responsiveness, especially in scenarios with high concurrency or I/O-bound operations.
-
-In this way, the controllers orchestrates the overall flow, delegates data-related tasks to the models, and involve the handlers for specific actions.
-This structure promotes separation of concerns, making the code more modular, maintainable, and easier to understand.
 
 ```
 ├── backend                                       # root folder of the applicative
